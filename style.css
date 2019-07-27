@@ -1,0 +1,45 @@
+body{
+    background: linear-gradient(to right ,#cc2b5e , #753a88);
+    font-family: 'Volkhov', serif;
+    color: papayawhip;
+}
+h1{
+    color: #222222;
+}
+input, button{
+    text-align: center;
+    height: 3em;
+    border: 1px solid transparent;
+}
+select{
+    color: red !important;
+    background-color: #222222;
+}
+h2, .h3{
+    font-size: 25px;
+}
+@media screen and (max-width:900px){
+    h2{
+        font-size: 20px;
+        padding-top: 8px;
+    }
+    .answer{
+        line-height: 1px;
+        text-align: center;
+    }
+    h3{
+        padding-top: 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .h1{
+        font-size: 20px;
+        padding-top: 30px !important;
+    }
+    input{
+        height: 3em;
+    }
+    .inputed{
+        padding-right: 5px;
+    }
+}

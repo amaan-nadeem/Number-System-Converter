@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela|Volkhov&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Number System Conversion</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center bg-info">
+            <h1>Number System Conversion</h1>
+        </div>
+        <div class="row justify-content-around my-5">
+            <h2>From: </h2>
+            <select name="Select Number System" class="col-sm-12 col-md-4 " id="selected" onclick="Entered_number()">
+                <option value="Select Number System">Select Any Number System</option>
+                <option value="Binary Number System" id="Binary">Binary Number System</option>
+                <option value="Hexadecimal Number System" id="Hexa">Hexadecimal Number System</option>
+                <option value="Decimal Number System" id="Decimal">Decimal Number System</option>
+                <option value="Octal Number System" id="Octal">Octal Number System</option>
+            </select>
+            <h2>To: </h2>
+            <select name="Select Number System" id="secondselected" class="col-sm-12 col-md-4 ">
+                    <option value="Select Number System">Select Any Number System</option>
+                    <option value="Binary Number System" id="Binary-2">Binary Number System</option>
+                    <option value="Hexadecimal Number System" id="Hexa-2">Hexadecimal Number System</option>
+                    <option value="Decimal Number System" id="Decimal-2">Decimal Number System</option>
+                    <option value="Octal Number System" id="Octal-2">Octal Number System</option>
+            </select>
+
+        </div>
+        <div class="row justify-content-center inputed">
+        <h3 class="my-4 p-4 h1 col-lg-4 col-md-4 col-12 h3" id="h1">Enter a Value: </h3>
+        <input type="text" value="Enter a Number" class="my-5 p-3 bg-warning col-md-4 col-9" onclick="erase()" id="value">
+        <button class="btn btn-primary my-5 p-3 col-lg-2 col-md-2 col-3" onclick="binary()">Submit</button>
+        
+    </div>
+
+        <div class="row justify-content-center inputed">
+                <h3 class="mx-2 my-4 answer col-lg-3 col-md-6 col-sm-12 col-12" id="answered">Answer:</h3>
+                <input type="text" value="Answer" class="mx-2 my-4 bg-success col-md-4" id="answer">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
